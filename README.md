@@ -4,7 +4,7 @@ Este projeto foi construído com HTML e CSS utilizando de FlexBox. Nele construo
 
 ![screenshot](/img/screenshot.png)
 
-- Você pode conferir a solução do projeto [clicando aqui]().
+- Você pode conferir a solução do projeto [clicando aqui](https://marcelymelo.github.io/FrontBox/).
 
 ## O que aprendi com o projeto?
 

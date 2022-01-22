@@ -34,6 +34,10 @@
 /* 1. Estilos gerais
 /**********************************/
 
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	background-color: var(--clr-white);
 	font-family: var(--ff-primary);
@@ -62,15 +66,13 @@ img{
 /* 2. Menu
 /**********************************/
 
-.menu-bg{
-	background-color: var(--clr-green-light);
-}
 .menu{
+	background-color: var(--clr-green-light);
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
-	max-width: 960px;
+	padding: 10px calc((100% - 960px) / 2);
 	margin: 0 auto;
 }
 .menu__logo{
@@ -339,3 +341,14 @@ p{
 /* 9. Footer
 /**********************************/
 
+.footer{
+	background-color: var(--clr-pink-light);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 55px calc((100% - 960px) / 2);
+}
+.footer__copyright, .footer__logo{
+	padding-left: 10px;
+	padding-right: 10px;
+}

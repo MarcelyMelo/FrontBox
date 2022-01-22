@@ -241,6 +241,44 @@ p{
 /* 7. Vantagens
 /**********************************/
 
+.vantagens{
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.vantagem{
+	max-width: 240px;
+	margin: 10px;
+}
+.vantagem__titulo{
+	font-size: 1.7rem;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+.vantagem__titulo::before{
+	content: "";
+	display: inline-block;
+	margin-right: 5px;
+	width: 10px;
+	height: 25px;
+}
+.vantagem:nth-of-type(3n+1) .vantagem__titulo::before {
+	background-color: var(--clr-green-light);
+}
+.vantagem:nth-of-type(3n+2) .vantagem__titulo::before {
+	background-color: var(--clr-pink-dark);
+}
+.vantagem:nth-of-type(3n+3) .vantagem__titulo::before {
+	background-color: var(--clr-green-dark);
+}
+@media (max-width:800px) {
+	.vantagem{
+		max-width: 220px;
+	}
+}
+
 /**********************************/
 /* 8. Newsletter
 /**********************************/

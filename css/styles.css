@@ -112,6 +112,7 @@ p{
 		text-align: center;
 		width: 100%;
 		display: none;
+		font-size: 23px;
 	}
 	.nav__list{
 		display: block;

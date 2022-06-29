@@ -62,6 +62,20 @@ img{
 	max-width: 100%;
 }
 
+.un{
+	display: inline-block;
+}
+.un::after{
+	content: '';
+	width: 0px;
+	height: 1px;
+	display: block;
+	background-color: #000;
+	transition: 300ms;
+}
+.un:hover::after{
+	width: 100%;
+}
 /**********************************/
 /* 2. Menu
 /**********************************/
@@ -103,6 +117,7 @@ p{
 #check{
 	display: none;
 }
+
 
 @media (max-width:800px){
 	header{
@@ -252,7 +267,14 @@ p{
 	padding: 10px;
 	text-align: center;
 	text-transform: uppercase;
+	transition: background 1s ease;
 	border:2px solid var(--clr-green-light);
+}
+.plano__btn-comprar:hover{
+	background-color: var(--clr-green-light);
+}
+.plano:last-child .plano__btn-comprar:hover{
+	background-color: var(--clr-pink-dark);
 }
 .plano:last-child{
 	background-color: var(--clr-green-light);
@@ -263,6 +285,10 @@ p{
 .plano:last-child .plano-lista__item::before, .plano:last-child .plano__divisor{
 	background-color: var(--clr-pink-dark);
 }
+
+
+
+
 @media (max-width:800px){
 	.plano:nth-child(3){
 		order: -2;
